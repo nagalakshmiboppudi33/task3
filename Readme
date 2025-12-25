@@ -1,0 +1,70 @@
+Project Title:
+  Algo-Trading Market Analytics & Prediction System 
+Object:
+  The aim of the project is to analyzes historical market data , extracts insights using statistical techniques,and also prrdicts the future price movements using machine learning models
+The projects targets on :
+ --> Data collection and preparation
+ --> Exploratory data analysis(EDA)
+ --> Predictive modelling
+ --> Trading strategy simulation
+Tools :
+ Python & libraries :
+     .pandas 
+     .numpy
+     .Seaborn 
+     .Matplotlin
+     .sklearn
+ Environment: 
+         VSCode
+ Version Control : 
+         Git & GitHub
+--> Data Collection & Preparation :
+     In this I used the NSE (National Stock Exchange ) & BSE (Bombay Stock Exchange) historicala data.Which dataset includes the open price, close price,low price, close price ,volume these are the types of data columns i used.
+     Steps :
+     . Data cleaning and formating.
+     . Handling the missing values: these are handleded using the mean replacement and forward filling.
+     . merging the datasets wirh NSE_BSE dataset with extra_dataset if needed.
+     . After these steps dataset is cleaned and useful for further steps.
+  --> Feature Engineering :
+       Featured Engineering is useful  for creating new features from raw data for improving model prediction accuracy easily.
+       steps :
+       . EMA: helps to identify the trend direction.
+       . RSI: helps to measures market momemtum ,tells the stock is oversold or over brought.
+       . MACD: measures the strength and direction of trend based on the ema.
+       . Volatility & ATR(Average True Range)
+--> Exploratory Data Analysis :
+     EDA is for performing and understanding market behaviors and patterns.
+     Thsi includes the price trens ,volume analysis,volatility analysis,candle stick-based behavior .
+--> Predictive Analysis : 
+     Prediction Analysis redicts the next-day price movement.Creates two models 
+     .Random Forest clasiifier and
+     .XGBoost classifier      
+    Theses two models can accuratly compare scores  and performance scored based on the results.
+    Random is for small datasets and have high accuracy compared to XGBoost ,and XGBoost is for very large datasets.
+--> Trading Strategy Stimulation :
+     Trading strategy decides to measure probability of the model which decides 
+     buy when RSI < 30
+     sell when RSI > 70
+     hold when RSI between 30-70
+     And it generate ssmall no of trades because small dataset.
+     performs total profit/loss,win ratio,accuracy ,draw down calculation.
+
+Steps To Run The Project 
+  --> Step-1 : Install python latest version , and install this libraries pandas,numpy,scikit-learn,seaborn,xgboost,matplotlib using pip install command.
+  --> step-1 : For  dataset of NSE/BSE data run the command
+       command :NSE_BSE_analysis.py
+       output in : NSE_BSE_analysis.csv
+  --> Step-3 : To run data cleaning script 
+       command : py .\data_cleaning_featured.py
+       output in : cleaned_data.csv
+  --> Step-4 : To run featured engineering script
+       command : py .\featured_engineering.py
+       output in : featured.csv
+  --> Step-5 : To run EDA script
+       command : py .\EDA.py
+  --> Step-6 : To run models Script 
+       command : py .\models.py
+  --> Step-7 : To run trading script 
+       command : py .\Trading_strategy.py
+
+

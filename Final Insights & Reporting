@@ -1,0 +1,26 @@
+--> Market Behavior patterns Identified :
+      Market behavior depends on the historical data analysis , and it shows the market market upward and downward movements on a limited dataset.The price changes are gradually and sudden changes in volatility are rare . Moving averages and MACD values indicate momentum-based behavior and also prices follows the recent trends in a short period.
+--> Best Performing Model :
+      Among the test models i used :
+       . The Random Forest performed better than the  XGBoost on the shortest dataset.
+       . The Random Forest can achieves the higher accuracy than the XGBoost because , it can handles the small datasets and more efficient.
+       . And also XGBoost gives the unstable results only due to the small datasets and it needs more data for learning complex data patterns.
+       . So , the Random Forest is the best performing model.
+--> Strengths And Limitations :
+      Strengths :
+        . I can use indicators like EMA,MACD,Volatility which improves the decision making.
+        . Strategy logic is simple and easy to predict .
+        . backtesting provides the understanding of trading strategy.
+      Limitations : 
+      . Dataset is small,so it limits the predict accuracy.
+      . RSI indicator is not be fully used due to missing values.
+      . This analysis are for the acedemic demonstration only,not for real trading.
+--> Trading strategy Performance :
+      . Generates a small no of trades because limited data.
+      . It shows the profit and loss results.
+      . And it shows the accuracy,win ratio,and draw down calculations.
+--> Recommendation Trades:
+      It recommendes that learning algorithm ,understanding techincal indicators,backtesting techinques.
+      For the real world apply the strategy on large datasets,for better results.
+
+     
